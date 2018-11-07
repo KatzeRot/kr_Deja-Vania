@@ -20,12 +20,12 @@ public class Player : MonoBehaviour {
     //bool jumping;
 
     [Header("Atributtes")]
-    [SerializeField] const int totalHealth = 3;
-    [SerializeField] int health = totalHealth;
+    private int totalHealth = 7;
+    private int health = 7;
     private int puntuation = 0;
     [SerializeField] float speed = 5;
     [SerializeField] float jumpForce = 10;
-    [SerializeField] Image[] hearts;
+    //[SerializeField] int hearts;
 
     [Header("References")]
     [SerializeField] Text txtPuntuation;
@@ -33,11 +33,14 @@ public class Player : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        health = totalHealth;
         statusPlayer.text = "StatusPlayer: " + status.ToString(); // Unica función de mostrar en pantalla el estado del player
         rb2D = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
         playerSprite = GetComponent<SpriteRenderer>();
         txtPuntuation.text = "Score: " + puntuation;
+        Vector2 position = GameController.GetPosition();
+        this.transform.position = position;
     }
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
@@ -106,19 +109,16 @@ public class Player : MonoBehaviour {
         }
         if (collision.gameObject.name == "Heart") {
             if(health < totalHealth) {
-                hearts[health].enabled = true;
+                //hearts[health].enabled = true;
                 health++;
                 Destroy(collision.gameObject);
             }
         }
     }
     public void TakeDamage(int damage) {
-        if(health == totalHealth) {
-            hearts[health -1].enabled = false;
-            health -= damage;
-        } else if(health >= 0){
-            hearts[health].enabled = false;
-            health -= damage;
+        health -= damage;
+        if(health <= 0){
+            health = 0;
         }
         
     }
@@ -138,7 +138,9 @@ public class Player : MonoBehaviour {
         }
         return inGround;
     }
-
+    public int GetHealth() {
+        return health;
+    }
     //private bool IsInGround() {
     //    bool inGround = false;
     //    Collider2D[] cols = Physics2D.OverlapCircleAll(posFoot.position, radioOverlap);
