@@ -20,8 +20,8 @@ public class Player : MonoBehaviour {
     //bool jumping;
 
     [Header("Atributtes")]
-    private int totalHealth = 7;
-    private int health = 7;
+    private const int TOTALHEALTH = 5;
+    private int health = TOTALHEALTH;
     private int puntuation = 0;
     [SerializeField] float speed = 5;
     [SerializeField] float jumpForce = 10;
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        health = totalHealth;
+        health = TOTALHEALTH;
         statusPlayer.text = "StatusPlayer: " + status.ToString(); // Unica función de mostrar en pantalla el estado del player
         rb2D = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
@@ -48,9 +48,8 @@ public class Player : MonoBehaviour {
             print("Space PULSADO");
         }
         statusPlayer.text = "StatusPlayer: " + status.ToString(); // Unica función de mostrar en pantalla el estado del player        
-            
-        magic += 0.002f;
-        barraMagic.fillAmount = magic;
+
+        StartCoroutine("LoadContainer");
 
         flipSprite();
         Die();
@@ -64,9 +63,9 @@ public class Player : MonoBehaviour {
         //float ySpeed = rb2D.velocity.y;
         float ySpeedActual = rb2D.velocity.y;
         if(Mathf.Abs(xPos) > 0.01f) {
-            playerAnimator.SetBool("Walking", true);
+            playerAnimator.SetBool("Running", true);
         } else {
-            playerAnimator.SetBool("Walking", false);   
+            playerAnimator.SetBool("Running", false);   
         }
 
         if(status == StatusPlayer.Jumping){
@@ -100,7 +99,7 @@ public class Player : MonoBehaviour {
         }
         
     }
-    private void OnCollisionStay2D(Collision2D collision) {
+    private void OnCollisionEnter2D(Collision2D collision) {
         print("Tocaste " + collision.gameObject.name);
 
         if (collision.gameObject.name == "Coin10") {
@@ -108,7 +107,7 @@ public class Player : MonoBehaviour {
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.name == "Heart") {
-            if(health < totalHealth) {
+            if(health < TOTALHEALTH) {
                 //hearts[health].enabled = true;
                 health++;
                 Destroy(collision.gameObject);
@@ -138,6 +137,20 @@ public class Player : MonoBehaviour {
         }
         return inGround;
     }
+    IEnumerator LoadContainer() {
+        if (magic <= 1f) {
+            magic += 0.002f;
+            barraMagic.fillAmount = magic;
+        } else if (magic <= 0f) {
+            magic += 0.002f;
+            magic = 0f;
+            
+        } else if (magic >= 1f) {
+            magic = 1f;
+        }
+            yield return null;
+    }
+
     public int GetHealth() {
         return health;
     }

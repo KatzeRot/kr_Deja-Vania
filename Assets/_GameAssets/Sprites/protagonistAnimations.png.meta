@@ -1,7 +1,187 @@
 fileFormatVersion: 2
 guid: 5a73759f7f09e78418c57b5ef9a09c88
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: protagonistAnimations_0
+    21300002: protagonistAnimations_1
+    21300004: protagonistAnimations_2
+    21300006: protagonistAnimations_3
+    21300008: protagonistAnimations_4
+    21300010: protagonistAnimations_5
+    21300012: protagonistAnimations_6
+    21300014: protagonistAnimations_7
+    21300016: protagonistAnimations_8
+    21300018: protagonistAnimations_9
+    21300020: protagonistAnimations_10
+    21300022: protagonistAnimations_11
+    21300024: protagonistAnimations_12
+    21300026: protagonistAnimations_13
+    21300028: protagonistAnimations_14
+    21300030: protagonistAnimations_15
+    21300032: protagonistAnimations_16
+    21300034: protagonistAnimations_17
+    21300036: protagonistAnimations_18
+    21300038: protagonistAnimations_19
+    21300040: protagonistAnimations_20
+    21300042: protagonistAnimations_21
+    21300044: protagonistAnimations_22
+    21300046: protagonistAnimations_23
+    21300048: protagonistAnimations_24
+    21300050: protagonistAnimations_25
+    21300052: protagonistAnimations_26
+    21300054: protagonistAnimations_27
+    21300056: protagonistAnimations_28
+    21300058: protagonistAnimations_29
+    21300060: protagonistAnimations_30
+    21300062: protagonistAnimations_31
+    21300064: protagonistAnimations_32
+    21300066: protagonistAnimations_33
+    21300068: protagonistAnimations_34
+    21300070: protagonistAnimations_35
+    21300072: protagonistAnimations_36
+    21300074: protagonistAnimations_37
+    21300076: protagonistAnimations_38
+    21300078: protagonistAnimations_39
+    21300080: protagonistAnimations_40
+    21300082: protagonistAnimations_41
+    21300084: protagonistAnimations_42
+    21300086: protagonistAnimations_43
+    21300088: protagonistAnimations_44
+    21300090: protagonistAnimations_45
+    21300092: protagonistAnimations_46
+    21300094: protagonistAnimations_47
+    21300096: protagonistAnimations_48
+    21300098: protagonistAnimations_49
+    21300100: protagonistAnimations_50
+    21300102: protagonistAnimations_51
+    21300104: protagonistAnimations_52
+    21300106: protagonistAnimations_53
+    21300108: protagonistAnimations_54
+    21300110: protagonistAnimations_55
+    21300112: protagonistAnimations_56
+    21300114: protagonistAnimations_57
+    21300116: protagonistAnimations_58
+    21300118: protagonistAnimations_59
+    21300120: protagonistAnimations_60
+    21300122: protagonistAnimations_61
+    21300124: protagonistAnimations_62
+    21300126: protagonistAnimations_63
+    21300128: protagonistAnimations_64
+    21300130: protagonistAnimations_65
+    21300132: protagonistAnimations_66
+    21300134: protagonistAnimations_67
+    21300136: protagonistAnimations_68
+    21300138: protagonistAnimations_69
+    21300140: protagonistAnimations_70
+    21300142: protagonistAnimations_71
+    21300144: protagonistAnimations_72
+    21300146: protagonistAnimations_73
+    21300148: protagonistAnimations_74
+    21300150: protagonistAnimations_75
+    21300152: protagonistAnimations_76
+    21300154: protagonistAnimations_77
+    21300156: protagonistAnimations_78
+    21300158: protagonistAnimations_79
+    21300160: protagonistAnimations_80
+    21300162: protagonistAnimations_81
+    21300164: protagonistAnimations_82
+    21300166: protagonistAnimations_83
+    21300168: protagonistAnimations_84
+    21300170: protagonistAnimations_85
+    21300172: protagonistAnimations_86
+    21300174: protagonistAnimations_87
+    21300176: protagonistAnimations_88
+    21300178: protagonistAnimations_89
+    21300180: protagonistAnimations_90
+    21300182: protagonistAnimations_91
+    21300184: protagonistAnimations_92
+    21300186: protagonistAnimations_93
+    21300188: protagonistAnimations_94
+    21300190: protagonistAnimations_95
+    21300192: protagonistAnimations_96
+    21300194: protagonistAnimations_97
+    21300196: protagonistAnimations_98
+    21300198: protagonistAnimations_99
+    21300200: protagonistAnimations_100
+    21300202: protagonistAnimations_101
+    21300204: protagonistAnimations_102
+    21300206: protagonistAnimations_103
+    21300208: protagonistAnimations_104
+    21300210: protagonistAnimations_105
+    21300212: protagonistAnimations_106
+    21300214: protagonistAnimations_107
+    21300216: protagonistAnimations_108
+    21300218: protagonistAnimations_109
+    21300220: protagonistAnimations_110
+    21300222: protagonistAnimations_111
+    21300224: protagonistAnimations_112
+    21300226: protagonistAnimations_113
+    21300228: protagonistAnimations_114
+    21300230: protagonistAnimations_115
+    21300232: protagonistAnimations_116
+    21300234: protagonistAnimations_117
+    21300236: protagonistAnimations_118
+    21300238: protagonistAnimations_119
+    21300240: protagonistAnimations_120
+    21300242: protagonistAnimations_121
+    21300244: protagonistAnimations_122
+    21300246: protagonistAnimations_123
+    21300248: protagonistAnimations_124
+    21300250: protagonistAnimations_125
+    21300252: protagonistAnimations_126
+    21300254: protagonistAnimations_127
+    21300256: protagonistAnimations_128
+    21300258: protagonistAnimations_129
+    21300260: protagonistAnimations_130
+    21300262: protagonistAnimations_131
+    21300264: protagonistAnimations_132
+    21300266: protagonistAnimations_133
+    21300268: protagonistAnimations_134
+    21300270: protagonistAnimations_135
+    21300272: protagonistAnimations_136
+    21300274: protagonistAnimations_137
+    21300276: protagonistAnimations_138
+    21300278: protagonistAnimations_139
+    21300280: protagonistAnimations_140
+    21300282: protagonistAnimations_141
+    21300284: protagonistAnimations_142
+    21300286: protagonistAnimations_143
+    21300288: protagonistAnimations_144
+    21300290: protagonistAnimations_145
+    21300292: protagonistAnimations_146
+    21300294: protagonistAnimations_147
+    21300296: protagonistAnimations_148
+    21300298: protagonistAnimations_149
+    21300300: protagonistAnimations_150
+    21300302: protagonistAnimations_151
+    21300304: protagonistAnimations_152
+    21300306: protagonistAnimations_153
+    21300308: protagonistAnimations_154
+    21300310: protagonistAnimations_155
+    21300312: protagonistAnimations_156
+    21300314: protagonistAnimations_157
+    21300316: protagonistAnimations_158
+    21300318: protagonistAnimations_159
+    21300320: protagonistAnimations_160
+    21300322: protagonistAnimations_161
+    21300324: protagonistAnimations_162
+    21300326: protagonistAnimations_163
+    21300328: protagonistAnimations_164
+    21300330: protagonistAnimations_165
+    21300332: protagonistAnimations_166
+    21300334: protagonistAnimations_167
+    21300336: protagonistAnimations_168
+    21300338: protagonistAnimations_169
+    21300340: protagonistAnimations_170
+    21300342: protagonistAnimations_171
+    21300344: protagonistAnimations_172
+    21300346: protagonistAnimations_173
+    21300348: protagonistAnimations_174
+    21300350: protagonistAnimations_175
+    21300352: protagonistAnimations_176
+    21300354: protagonistAnimations_177
+    21300356: protagonistAnimations_178
+    21300358: protagonistAnimations_179
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -29,7 +209,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -43,7 +223,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,7 +307,21 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: protagonistAnimations_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 849
+        height: 5033
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
